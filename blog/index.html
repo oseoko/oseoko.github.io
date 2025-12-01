@@ -1,0 +1,254 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <title>Blog - Wooseok Jeong</title>
+
+  <meta name="author" content="Wooseok Jeong">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="../images/favicon/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="../stylesheet.css">
+  <style>
+    .category-section {
+      display: none;
+    }
+
+    #sec-home {
+      display: block;
+    }
+
+    .main-content-table {
+      width: 100%;
+      max-width: 800px;
+      border: 0px;
+      border-spacing: 0px;
+      border-collapse: separate;
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    @media (max-width: 1200px) {
+      .main-content-table {
+        margin-left: 220px;
+        width: calc(100% - 240px);
+      }
+    }
+
+    .tag {
+      display: inline-block;
+      padding: 2px 8px;
+      margin-top: 5px;
+      margin-right: 5px;
+      font-size: 12px;
+      color: #555;
+      background-color: #f0f0f0;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="sidebar" style="position: fixed; left: 40px; top: 150px; width: 150px;">
+    <h3>Categories</h3>
+    <p style="line-height:1.8;">
+      <a href="javascript:void(0)" onclick="showCategory('home')">Home</a><br>
+      <a href="javascript:void(0)" onclick="showCategory('paper')">Paper</a><br>
+      <a href="javascript:void(0)" onclick="showCategory('research')">Research</a><br>
+      <a href="javascript:void(0)" onclick="showCategory('study')">Study</a><br>
+      <a href="javascript:void(0)" onclick="showCategory('algorithm')">Algorithm</a>
+    </p>
+  </div>
+  <table class="main-content-table">
+    <tbody>
+      <tr style="padding:0px">
+        <td style="padding:0px">
+          <table
+            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+            <tbody>
+              <tr style="padding:0px">
+                <td style="padding:2.5%;width:100%;vertical-align:middle">
+                  <p class="name" style="text-align: center;">
+                    Blog
+                  </p>
+                  <p style="text-align:center">
+                    <a href="../index.html">Home</a> &nbsp;/&nbsp;
+                    <a href="index.html">Blog</a>
+                  </p>
+                  <p style="text-align:center">
+                    Study notes and learning materials
+                  </p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <!-- Main content with sidebar -->
+          <table
+            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+            <tbody>
+              <tr>
+                <!-- Right Content Area -->
+                <td style="padding:20px;width:100%;vertical-align:top">
+
+                  <div id="sec-home" class="category-section">
+                    <h2 id="home">Home</h2>
+                    <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;">
+                      <tbody>
+                        <tr>
+                          <td style="padding:10px 0px;width:10%;vertical-align:top">
+                            <span style="color:#888;">Date</span>
+                          </td>
+                          <td style="padding:10px 0px;width:15%;vertical-align:top">
+                            <span style="color:#888;">Tags</span>
+                          </td>
+                          <td style="padding:10px 0px;width:75%;vertical-align:middle">
+                            <p style="color:#888;">Latest posts will appear here</p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+
+                  <div id="sec-paper" class="category-section">
+                    <!-- Paper Section -->
+                    <h2 id="paper">Paper</h2>
+                    <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;">
+                      <tbody>
+                        <tr>
+                          <td style="padding:10px 0px;width:10%;vertical-align:top">
+                            <span style="color:#888;">2025</span>
+                          </td>
+                          <td style="padding:10px 0px;width:15%;vertical-align:top">
+                            <span style="color:#888;">IEEE Access</span>
+                          </td>
+                          <td style="padding:10px 0px;width:75%;vertical-align:middle">
+                            <a href="posts/IGSRec.html">
+                              <span class="papertitle">Interaction-Grounded Semantic Graph Refinement for LLM-based
+                                Recommendation</span>
+                            </a>
+                            <br>
+                            [IGSRec]
+                            <br>
+                            <a href="https://github.com/oseoko/IGSRec">Code</a> /
+                            <a href="https://ieeexplore.ieee.org/document/11242144">Paper</a>
+                            <br>
+                            <span class="tag">LLM</span>
+                            <span class="tag">RecSys</span>
+                            <span class="tag">Graph</span>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+
+                  <div id="sec-research" class="category-section">
+                    <!-- Research Section -->
+                    <h2 id="research">Research</h2>
+                    <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;">
+                      <tbody>
+                        <tr>
+                          <td style="padding:10px 0px;width:10%;vertical-align:top">
+                            <span style="color:#888;">Date</span>
+                          </td>
+                          <td style="padding:10px 0px;width:15%;vertical-align:top">
+                            <span style="color:#888;">Venue</span>
+                          </td>
+                          <td style="padding:10px 0px;width:75%;vertical-align:middle">
+                            <p style="color:#888;">No posts yet</p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+
+                  <div id="sec-study" class="category-section">
+                    <!-- Study Section -->
+                    <h2 id="study">Study</h2>
+                    <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;">
+                      <tbody>
+                        <tr>
+                          <td style="padding:10px 0px;width:10%;vertical-align:top">
+                            <span style="color:#888;">2024</span>
+                          </td>
+                          <td style="padding:10px 0px;width:15%;vertical-align:top">
+                            <span style="color:#888;">Machine Learning</span>
+                          </td>
+                          <td style="padding:10px 0px;width:75%;vertical-align:middle">
+                            <a href="posts/study-ml.html">
+                              <span class="papertitle">Machine Learning Course Notes</span>
+                            </a>
+                            <br>
+                            <span class="tag">Supervised Learning</span>
+                            <span class="tag">Classification</span>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+
+                  <div id="sec-algorithm" class="category-section">
+                    <!-- Algorithm Section -->
+                    <h2 id="algorithm">Algorithm</h2>
+                    <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;">
+                      <tbody>
+                        <tr>
+                          <td style="padding:10px 0px;width:10%;vertical-align:top">
+                            <span style="color:#888;">Date</span>
+                          </td>
+                          <td style="padding:10px 0px;width:15%;vertical-align:top">
+                            <span style="color:#888;">Tags</span>
+                          </td>
+                          <td style="padding:10px 0px;width:75%;vertical-align:middle">
+                            <p style="color:#888;">No posts yet</p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <table
+            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+            <tbody>
+              <tr>
+                <td style="padding:0px">
+                  <br>
+                  <p style="text-align:right;font-size:small;">
+                    Template from <a href="https://github.com/jonbarron/jonbarron.github.io">Jon Barron's website</a>
+                  </p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <script>
+    function showCategory(category) {
+      const sections = document.getElementsByClassName('category-section');
+      for (let i = 0; i < sections.length; i++) {
+        sections[i].style.display = 'none';
+      }
+      const selectedSection = document.getElementById('sec-' + category);
+      if (selectedSection) {
+        selectedSection.style.display = 'block';
+      }
+    }
+
+    window.onload = function () {
+      const hash = window.location.hash.substring(1); // Remove '#'
+      if (hash) {
+        showCategory(hash);
+      }
+    };
+  </script>
+</body>
+
+</html>

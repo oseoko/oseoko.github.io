@@ -1,0 +1,112 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>IGSRec - Wooseok Jeong</title>
+
+    <meta name="author" content="Wooseok Jeong">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="../../images/favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="../../stylesheet.css">
+
+</head>
+
+<body>
+    <table
+        style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+        <tbody>
+            <tr style="padding:0px">
+                <td style="padding:0px">
+                    <table
+                        style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                        <tbody>
+                            <tr style="padding:0px">
+                                <td style="padding:2.5%;width:100%;vertical-align:middle">
+                                    <p style="text-align:center">
+                                        <a href="../index.html">Home</a> &nbsp;/&nbsp;
+                                        <a href="../index.html#paper">Paper</a> &nbsp;/&nbsp;
+                                        <span>IGSRec</span>
+                                    </p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <table
+                        style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                        <tbody>
+                            <tr>
+                                <td style="padding:20px;width:100%;vertical-align:middle">
+                                    <h1>Interaction-Grounded Semantic Graph Refinement for LLM-based Recommendation</h1>
+                                    <p style="color:#888;font-size:small;">2025 | IEEE Access</p>
+
+                                    <h2>Abstract</h2>
+                                    <p>
+                                        Large language models (LLMs) have recently demonstrated remarkable potential for
+                                        recommendation by reframing it as a text-generation task. Recent LLM-based
+                                        approaches apply GNNs to capture higher-order collaborative patterns from
+                                        interaction graphs but handle textual data separately, failing to extract
+                                        higher-order semantic patterns from text. One potential solution is to construct
+                                        semantic graphs to better capture such semantic relationships. However, naively
+                                        selecting top-k connections by profile similarity introduces significant
+                                        challenges: 1) preference gap between textual similarity and actual user
+                                        behavior, and 2) semantic distortion where identical attributes carry different
+                                        meanings for users versus items. To overcome these issues, we propose an
+                                        Interaction-Grounded Semantic Recommender (IGSRec), which constructs an
+                                        interaction-grounded semantic graph by aligning profile-based connections with
+                                        observed interactions. IGSRec employs an LLM-based profile generator, constructs
+                                        a top-k semantic graph, then refines it using a learnable scoring function that
+                                        identifies relevant semantic neighborhoods conditioned on user-item
+                                        interactions. Through dual-graph propagation over both the refined semantic and
+                                        interaction graphs, IGSRec captures higher-order semantic and collaborative
+                                        patterns. Experiments on Amazon Review benchmarks demonstrate state-of-the-art
+                                        performance in both direct and sequential recommendation tasks. Our code and
+                                        data are publicly available at https://github.com/oseoko/IGSRec/
+                                    </p>
+
+
+
+                                    <h2>Review & Notes</h2>
+                                    <p>
+                                        (Detailed review and notes will be added here.)
+                                    </p>
+
+                                    <h2>Resources</h2>
+                                    <ul>
+                                        <li><a href="https://ieeexplore.ieee.org/document/11242144">Paper (IEEE
+                                                Access)</a></li>
+                                        <li><a href="https://github.com/oseoko/IGSRec">Code (GitHub)</a></li>
+                                    </ul>
+
+                                    <br>
+                                    <p>
+                                        <a href="../index.html#paper">← Back to Paper List</a>
+                                    </p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <table
+                        style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                        <tbody>
+                            <tr>
+                                <td style="padding:0px">
+                                    <br>
+                                    <p style="text-align:right;font-size:small;">
+                                        Template from <a href="https://github.com/jonbarron/jonbarron.github.io">Jon
+                                            Barron's website</a>
+                                    </p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
